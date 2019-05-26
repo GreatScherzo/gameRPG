@@ -1,0 +1,7 @@
+C:\Users\Barzarin\Documents\GitHub\gameRPG\RpgGame\RpgGame\obj\Debug\RpgGame.csprojAssemblyReference.cache
+C:\Users\Barzarin\Documents\GitHub\gameRPG\RpgGame\RpgGame\obj\Debug\RpgGame.csproj.CoreCompileInputs.cache
+C:\Users\Barzarin\Documents\GitHub\gameRPG\RpgGame\RpgGame\bin\Debug\RpgGame.exe.config
+C:\Users\Barzarin\Documents\GitHub\gameRPG\RpgGame\RpgGame\bin\Debug\RpgGame.exe
+C:\Users\Barzarin\Documents\GitHub\gameRPG\RpgGame\RpgGame\bin\Debug\RpgGame.pdb
+C:\Users\Barzarin\Documents\GitHub\gameRPG\RpgGame\RpgGame\obj\Debug\RpgGame.exe
+C:\Users\Barzarin\Documents\GitHub\gameRPG\RpgGame\RpgGame\obj\Debug\RpgGame.pdb

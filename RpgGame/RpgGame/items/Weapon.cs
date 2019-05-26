@@ -15,7 +15,6 @@ namespace RpgGame.items
             {
                 get { return ("The sword that was meant for the one to bring light to the " +
                         "to extinguish the misery"); }
-                set { myVar = value; }
             }
 
             
