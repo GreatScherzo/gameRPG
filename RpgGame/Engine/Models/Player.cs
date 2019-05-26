@@ -8,14 +8,14 @@ namespace Engine.Model
 {
     class Player
     {
-        public int Name { get; set; }
-        public string Strength { get; set; }
-        public string Stamina { get; set; }
-        public string Dexterity { get; set; }
-        public string Intelligence { get; set; }
-        public string Level { get; set; }
-        public string Exp { get; set; }
-        public string Gold { get; set; }
+        public string Name { get; set; }
+        public int Strength { get; set; }
+        public int Stamina { get; set; }
+        public int Dexterity { get; set; }
+        public int Intelligence { get; set; }
+        public int Level { get; set; }
+        public int Exp { get; set; }
+        public int Gold { get; set; }
 
         /*
         int Strength;
