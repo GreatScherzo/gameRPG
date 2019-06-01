@@ -5,9 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using Engine.Model;
 
-namespace Engine.Models.ViewModels
+namespace Engine.ViewModels
 {
-    class GameSession
+    public class GameSession
     {
 
         //#TODO: create a save system and load up here
@@ -21,7 +21,14 @@ namespace Engine.Models.ViewModels
             //Console.WriteLine("Hello adventurer, might i ask you name please?");
 
             currentPlayer.Name = "Default"; //Hardcoded
+            currentPlayer.Strength = 1;
+            currentPlayer.Stamina = 1;
+            currentPlayer.Dexterity = 1;
+            currentPlayer.Intelligence = 1;
             currentPlayer.Gold = 1000;
+            currentPlayer.Level = 1;
+            currentPlayer.Exp = 100;
+            
 
 
 

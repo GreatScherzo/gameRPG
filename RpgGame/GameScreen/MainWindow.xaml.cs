@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Engine.ViewModels;
 
 namespace GameScreen
 {
@@ -20,9 +21,19 @@ namespace GameScreen
     /// </summary>
     public partial class MainWindow : Window
     {
+        private GameSession _gameSession;
+
+
         public MainWindow()
         {
             InitializeComponent();
+
+            _gameSession = new GameSession();
+
+            //set up DataContext, a build-in property for xaml to use for its value.
+            DataContext = _gameSession;
+
+
         }
     }
 }
