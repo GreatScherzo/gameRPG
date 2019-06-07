@@ -13,6 +13,13 @@ namespace Engine.ViewModels
         //#TODO: create a save system and load up here
         public Player currentPlayer { get; set; }
 
+
+        //Event Subscription
+        
+
+
+
+
         public GameSession()
         {
             currentPlayer = new Player();

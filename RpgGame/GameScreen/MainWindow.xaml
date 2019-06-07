@@ -10,7 +10,7 @@
         <Label Content="Game Data" HorizontalAlignment="Left" Margin="332,10,0,0" VerticalAlignment="Top" Height="474" Width="674"/>
         <Label Content="Inventory/Quest" HorizontalAlignment="Left" Margin="10,489,0,0" VerticalAlignment="Top" Height="238" Width="317"/>
         <Label Content="Combat/Movement Control" HorizontalAlignment="Left" Margin="327,489,0,0" VerticalAlignment="Top" Width="679" Height="238"/>
-        <Grid HorizontalAlignment="Left" Height="474" Margin="10,10,0,0" VerticalAlignment="Top" Width="317" Grid.Row="8" Grid.Column="2" UseLayoutRounding="True" ShowGridLines="True">
+        <Grid HorizontalAlignment="Left" Height="474" Margin="10,10,0,0" VerticalAlignment="Top" Width="317" Grid.Row="8" Grid.Column="2" UseLayoutRounding="True">
             <Grid.RowDefinitions>
                 <RowDefinition/>
                 <RowDefinition/>
@@ -43,6 +43,7 @@
             <Label Content="{Binding currentPlayer.Stamina}" HorizontalAlignment="Left" Margin="1,12,-1,0" VerticalAlignment="Top" Width="159" Grid.Row="6" Grid.Column="1"/>
             <Label Content="Dexterity:" HorizontalAlignment="Left" Margin="0,11,0,0" VerticalAlignment="Top" Width="159" Grid.ColumnSpan="2" Grid.Row="7"/>
             <Label Content="{Binding currentPlayer.Dexterity}" HorizontalAlignment="Left" Margin="1,11,-1,0" VerticalAlignment="Top" Width="159" Grid.Row="7" Grid.Column="1"/>
+            <Button Content="Button" HorizontalAlignment="Left" Margin="39,10,0,0" Grid.Row="8" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
         </Grid>
 
 
