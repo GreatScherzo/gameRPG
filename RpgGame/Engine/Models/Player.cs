@@ -1,21 +1,156 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
+using System.Runtime.Serialization;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Engine.Model
 {
-    public class Player
+
+    [DataContract()]
+    public class Player : INotifyPropertyChanged
+
     {
-        public string Name { get; set; }
-        public int Strength { get; set; }
-        public int Stamina { get; set; }
-        public int Dexterity { get; set; }
-        public int Intelligence { get; set; }
-        public int Level { get; set; }
-        public int Exp { get; set; }
-        public int Gold { get; set; }
+        private string _Name;
+        private int _Strength;
+        private int _Stamina;
+        private int _Dexterity;
+        private int _Intelligence;
+        private int _Exp;
+        private int _Gold;
+
+        [DataMember()]
+        public string Name
+        {
+            get
+            {
+                return _Name;
+            }
+            set
+            {
+                _Name = value;
+                OnPropertyChanged("Name");
+            }
+
+        }
+
+        [DataMember()]
+        public int Strength
+        {
+            get
+            {
+                return _Strength;
+            }
+            set
+            {
+                _Strength = value;
+                OnPropertyChanged("Strength");
+            }
+
+        }
+
+        [DataMember()]
+        public int Stamina
+        {
+            get
+            {
+                return _Stamina;
+            }
+            set
+            {
+                _Stamina = value;
+                OnPropertyChanged("Stamina");
+            }
+
+        }
+
+
+        [DataMember()]
+        public int Dexterity
+        {
+            get
+            {
+                return _Dexterity;
+            }
+            set
+            {
+                _Dexterity = value;
+                OnPropertyChanged("Dexterity");
+            }
+
+        }
+
+        [DataMember()]
+        public int Intelligence
+        {
+            get
+            {
+                return _Intelligence;
+            }
+            set
+            {
+                _Intelligence = value;
+                OnPropertyChanged("Intelligence");
+            }
+
+        }
+
+        [DataMember()]
+        public int Level
+        {
+            get
+            {
+                return _Stamina;
+            }
+            set
+            {
+                _Stamina = value;
+                OnPropertyChanged("Stamina");
+            }
+
+        }
+
+        [DataMember()]
+        public int Exp
+        {
+            get
+            {
+                return _Exp;
+            }
+            set
+            {
+                _Exp = value;
+                OnPropertyChanged("Exp");
+            }
+
+        }
+
+        [DataMember()]
+        public int Gold
+        {
+            get
+            {
+                return _Gold;
+            }
+            set
+            {
+                _Gold = value;
+                OnPropertyChanged("Gold");
+            }
+
+        }
+
+
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        protected virtual void OnPropertyChanged (string propertyName)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
+
 
         /*
         int Strength;
