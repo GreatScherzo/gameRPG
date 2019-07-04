@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Engine.Model;
+//using Engine.Model;
+using Engine.Models;
 
 namespace Engine.ViewModels
 {
@@ -12,7 +13,7 @@ namespace Engine.ViewModels
 
         //#TODO: create a save system and load up here
         public Player currentPlayer { get; set; }
-
+        public Location currentLocation { get; set; }
 
         //Event Subscription
         
@@ -35,6 +36,16 @@ namespace Engine.ViewModels
             currentPlayer.Gold = 1000;
             currentPlayer.Level = 1;
             currentPlayer.Exp = 100;
+
+
+
+            currentLocation = new Location();
+            currentLocation.Name = "Istana";
+            currentLocation.XCoordinate = 0;
+            currentLocation.YCoordinate = 0;
+            currentLocation.Description = "The Istana";
+
+
             
 
 

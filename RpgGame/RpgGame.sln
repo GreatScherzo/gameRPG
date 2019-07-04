@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.28922.388
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameScreen", "GameScreen\GameScreen.csproj", "{FDAFD5DA-CC1D-419C-A4C8-07826371E9AB}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Engine", "Engine\Engine.csproj", "{EE0A605B-2DE3-4DDE-97F0-A1773DA66A86}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameScreen", "GameScreen_FormApp\GameScreen.csproj", "{CC8F7E70-3FED-4EF7-BEAD-16EA0036A979}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,14 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{FDAFD5DA-CC1D-419C-A4C8-07826371E9AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FDAFD5DA-CC1D-419C-A4C8-07826371E9AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FDAFD5DA-CC1D-419C-A4C8-07826371E9AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FDAFD5DA-CC1D-419C-A4C8-07826371E9AB}.Release|Any CPU.Build.0 = Release|Any CPU
 		{EE0A605B-2DE3-4DDE-97F0-A1773DA66A86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{EE0A605B-2DE3-4DDE-97F0-A1773DA66A86}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EE0A605B-2DE3-4DDE-97F0-A1773DA66A86}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EE0A605B-2DE3-4DDE-97F0-A1773DA66A86}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC8F7E70-3FED-4EF7-BEAD-16EA0036A979}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC8F7E70-3FED-4EF7-BEAD-16EA0036A979}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC8F7E70-3FED-4EF7-BEAD-16EA0036A979}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC8F7E70-3FED-4EF7-BEAD-16EA0036A979}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
