@@ -1,0 +1,14 @@
+C:\Users\Barzarin\Documents\GitHub\gameRPG\RpgGame\GameScreen_FormApp\bin\Debug\GameScreen_FormApp.exe.config
+C:\Users\Barzarin\Documents\GitHub\gameRPG\RpgGame\GameScreen_FormApp\bin\Debug\GameScreen_FormApp.exe
+C:\Users\Barzarin\Documents\GitHub\gameRPG\RpgGame\GameScreen_FormApp\bin\Debug\GameScreen_FormApp.pdb
+C:\Users\Barzarin\Documents\GitHub\gameRPG\RpgGame\GameScreen_FormApp\bin\Debug\Engine.dll
+C:\Users\Barzarin\Documents\GitHub\gameRPG\RpgGame\GameScreen_FormApp\bin\Debug\Engine.pdb
+C:\Users\Barzarin\Documents\GitHub\gameRPG\RpgGame\GameScreen_FormApp\obj\Debug\GameScreen.csprojAssemblyReference.cache
+C:\Users\Barzarin\Documents\GitHub\gameRPG\RpgGame\GameScreen_FormApp\obj\Debug\GameScreen_FormApp.Properties.Resources.resources
+C:\Users\Barzarin\Documents\GitHub\gameRPG\RpgGame\GameScreen_FormApp\obj\Debug\GameScreen.csproj.GenerateResource.cache
+C:\Users\Barzarin\Documents\GitHub\gameRPG\RpgGame\GameScreen_FormApp\obj\Debug\GameScreen.csproj.CoreCompileInputs.cache
+C:\Users\Barzarin\Documents\GitHub\gameRPG\RpgGame\GameScreen_FormApp\obj\Debug\GameScreen.csproj.CopyComplete
+C:\Users\Barzarin\Documents\GitHub\gameRPG\RpgGame\GameScreen_FormApp\obj\Debug\GameScreen_FormApp.exe
+C:\Users\Barzarin\Documents\GitHub\gameRPG\RpgGame\GameScreen_FormApp\obj\Debug\GameScreen_FormApp.pdb
+C:\Users\Barzarin\Documents\GitHub\gameRPG\RpgGame\GameScreen_FormApp\obj\Debug\GameScreen_FormApp.MainWindow.resources
+C:\Users\Barzarin\Documents\GitHub\gameRPG\RpgGame\GameScreen_FormApp\obj\Debug\GameScreen_FormApp.Forms.SplashScreen.resources

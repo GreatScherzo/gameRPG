@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace GameScreen_FormApp
+namespace GameScreen_FormApp.Forms
 {
-    public partial class Form1 : Form
+    public partial class SplashScreen : Form
     {
-        public Form1()
+        public SplashScreen()
         {
             InitializeComponent();
-        }
-
-        private void Label1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

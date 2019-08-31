@@ -5,15 +5,17 @@ using System.Text;
 using System.Threading.Tasks;
 //using Engine.Model;
 using Engine.Models;
+using Engine.Factories;
 
 namespace Engine.ViewModels
 {
     public class GameSession
     {
 
-        //#TODO: create a save system and load up here
-        public Player currentPlayer { get; set; }
-        public Location currentLocation { get; set; }
+        //#TODO: create a save system and up here
+        public Player CurrentPlayer { get; set; }
+        public Location CurrentLocation { get; set; }
+        public World CurrentWorld { get; set; }
 
         //Event Subscription
         
@@ -23,31 +25,42 @@ namespace Engine.ViewModels
 
         public GameSession()
         {
-            currentPlayer = new Player();
+            CurrentPlayer = new Player
+            {
 
-            //Asking for the user for name input for character name
-            //Console.WriteLine("Hello adventurer, might i ask you name please?");
+                //Asking for the user for name input for character name
+                //Console.WriteLine("Hello adventurer, might i ask you name please?");
 
-            currentPlayer.Name = "Default"; //Hardcoded
-            currentPlayer.Strength = 1;
-            currentPlayer.Stamina = 1;
-            currentPlayer.Dexterity = 1;
-            currentPlayer.Intelligence = 1;
-            currentPlayer.Gold = 1000;
-            currentPlayer.Level = 1;
-            currentPlayer.Exp = 100;
+                Name = "Default", //Hardcoded
+                Strength = 1,
+                Stamina = 1,
+                Dexterity = 1,
+                Intelligence = 1,
+                Gold = 1000,
+                Level = 1,
+                Exp = 100
+            };
+
+            /*
+            CurrentLocation = new Location
+            {
+                Name = "Istana",
+                XCoordinate = 0,
+                YCoordinate = -1,
+                Description = "description test",
+                ImageName = "des"
+            };
+             */
 
 
 
-            currentLocation = new Location();
-            currentLocation.Name = "Istana";
-            currentLocation.XCoordinate = 0;
-            currentLocation.YCoordinate = 0;
-            currentLocation.Description = "The Istana";
+            //loading the locations to the (world)map
+            WorldFactory factory = new WorldFactory();
+            CurrentWorld = factory.CreateWorld();
 
+            CurrentLocation = CurrentWorld.LocationAt(-1, 0);
 
             
-
 
 
         }
