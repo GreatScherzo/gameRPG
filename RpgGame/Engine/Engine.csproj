@@ -55,5 +55,8 @@
   <ItemGroup>
     <Resource Include="Images\Location\Istana.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\Location\TownCentral.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

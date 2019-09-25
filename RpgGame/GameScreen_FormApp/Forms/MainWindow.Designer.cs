@@ -51,10 +51,16 @@
             this.nameValueLabel = new System.Windows.Forms.Label();
             this.goldValueLabel = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.label1 = new System.Windows.Forms.Label();
+            this.buttonSouth = new System.Windows.Forms.Button();
+            this.buttonWest = new System.Windows.Forms.Button();
+            this.buttonEast = new System.Windows.Forms.Button();
+            this.buttonNorth = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.MainWindowTimer = new System.Windows.Forms.Timer(this.components);
             this.currentLocationPictureBox = new System.Windows.Forms.PictureBox();
-            this.gameSessionBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.MainWindowTimer = new System.Windows.Forms.Timer(this.components);
+            this.currentPlayerBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.currentLocationBindingSource = new System.Windows.Forms.BindingSource(this.components);
             dexterityLabel = new System.Windows.Forms.Label();
             expLabel = new System.Windows.Forms.Label();
             goldLabel = new System.Windows.Forms.Label();
@@ -74,7 +80,8 @@
             this.tabPage1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.currentLocationPictureBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gameSessionBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.currentPlayerBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.currentLocationBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // dexterityLabel
@@ -161,6 +168,11 @@
             // 
             // overallSplitContainer.Panel2
             // 
+            this.overallSplitContainer.Panel2.Controls.Add(this.label1);
+            this.overallSplitContainer.Panel2.Controls.Add(this.buttonSouth);
+            this.overallSplitContainer.Panel2.Controls.Add(this.buttonWest);
+            this.overallSplitContainer.Panel2.Controls.Add(this.buttonEast);
+            this.overallSplitContainer.Panel2.Controls.Add(this.buttonNorth);
             this.overallSplitContainer.Panel2.Controls.Add(this.groupBox1);
             this.overallSplitContainer.Size = new System.Drawing.Size(1067, 554);
             this.overallSplitContainer.SplitterDistance = 215;
@@ -178,7 +190,7 @@
             this.splitContainer2.Panel1.AutoScroll = true;
             this.splitContainer2.Panel1.Controls.Add(this.partyTabControl);
             this.splitContainer2.Size = new System.Drawing.Size(215, 554);
-            this.splitContainer2.SplitterDistance = 344;
+            this.splitContainer2.SplitterDistance = 329;
             this.splitContainer2.TabIndex = 0;
             // 
             // partyTabControl
@@ -189,7 +201,7 @@
             this.partyTabControl.Location = new System.Drawing.Point(0, 0);
             this.partyTabControl.Name = "partyTabControl";
             this.partyTabControl.SelectedIndex = 0;
-            this.partyTabControl.Size = new System.Drawing.Size(215, 344);
+            this.partyTabControl.Size = new System.Drawing.Size(215, 329);
             this.partyTabControl.TabIndex = 0;
             // 
             // tabPage1
@@ -214,14 +226,14 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(207, 318);
+            this.tabPage1.Size = new System.Drawing.Size(207, 303);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Player";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // updateInfobutton
             // 
-            this.updateInfobutton.Location = new System.Drawing.Point(109, 285);
+            this.updateInfobutton.Location = new System.Drawing.Point(126, 259);
             this.updateInfobutton.Name = "updateInfobutton";
             this.updateInfobutton.Size = new System.Drawing.Size(75, 23);
             this.updateInfobutton.TabIndex = 16;
@@ -231,7 +243,6 @@
             // 
             // dexterityValueLabel
             // 
-            this.dexterityValueLabel.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.gameSessionBindingSource, "currentPlayer.Dexterity", true));
             this.dexterityValueLabel.Location = new System.Drawing.Point(101, 162);
             this.dexterityValueLabel.Name = "dexterityValueLabel";
             this.dexterityValueLabel.Size = new System.Drawing.Size(43, 23);
@@ -240,7 +251,6 @@
             // 
             // expValueLabel
             // 
-            this.expValueLabel.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.gameSessionBindingSource, "CurrentPlayer.Exp", true));
             this.expValueLabel.Location = new System.Drawing.Point(101, 82);
             this.expValueLabel.Name = "expValueLabel";
             this.expValueLabel.Size = new System.Drawing.Size(83, 23);
@@ -249,7 +259,6 @@
             // 
             // levelValueLabel
             // 
-            this.levelValueLabel.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.gameSessionBindingSource, "currentPlayer.Level", true));
             this.levelValueLabel.Location = new System.Drawing.Point(101, 58);
             this.levelValueLabel.Name = "levelValueLabel";
             this.levelValueLabel.Size = new System.Drawing.Size(83, 23);
@@ -258,7 +267,6 @@
             // 
             // strengthValueLabel
             // 
-            this.strengthValueLabel.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.gameSessionBindingSource, "currentPlayer.Strength", true));
             this.strengthValueLabel.Location = new System.Drawing.Point(101, 233);
             this.strengthValueLabel.Name = "strengthValueLabel";
             this.strengthValueLabel.Size = new System.Drawing.Size(43, 23);
@@ -267,7 +275,6 @@
             // 
             // intelligenceValueLabel
             // 
-            this.intelligenceValueLabel.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.gameSessionBindingSource, "currentPlayer.Intelligence", true));
             this.intelligenceValueLabel.Location = new System.Drawing.Point(101, 185);
             this.intelligenceValueLabel.Name = "intelligenceValueLabel";
             this.intelligenceValueLabel.Size = new System.Drawing.Size(43, 23);
@@ -276,7 +283,6 @@
             // 
             // staminaValueLabel
             // 
-            this.staminaValueLabel.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.gameSessionBindingSource, "currentPlayer.Stamina", true));
             this.staminaValueLabel.Location = new System.Drawing.Point(101, 210);
             this.staminaValueLabel.Name = "staminaValueLabel";
             this.staminaValueLabel.Size = new System.Drawing.Size(43, 23);
@@ -285,7 +291,6 @@
             // 
             // nameValueLabel
             // 
-            this.nameValueLabel.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.gameSessionBindingSource, "CurrentPlayer.Name", true));
             this.nameValueLabel.Location = new System.Drawing.Point(79, 21);
             this.nameValueLabel.Name = "nameValueLabel";
             this.nameValueLabel.Size = new System.Drawing.Size(83, 23);
@@ -294,7 +299,6 @@
             // 
             // goldValueLabel
             // 
-            this.goldValueLabel.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.gameSessionBindingSource, "currentPlayer.Gold", true));
             this.goldValueLabel.Location = new System.Drawing.Point(101, 107);
             this.goldValueLabel.Name = "goldValueLabel";
             this.goldValueLabel.Size = new System.Drawing.Size(43, 23);
@@ -306,10 +310,59 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(207, 318);
+            this.tabPage2.Size = new System.Drawing.Size(207, 303);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Party";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(576, 242);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "label1";
+            // 
+            // buttonSouth
+            // 
+            this.buttonSouth.Location = new System.Drawing.Point(699, 478);
+            this.buttonSouth.Name = "buttonSouth";
+            this.buttonSouth.Size = new System.Drawing.Size(54, 22);
+            this.buttonSouth.TabIndex = 4;
+            this.buttonSouth.Text = "South";
+            this.buttonSouth.UseVisualStyleBackColor = true;
+            this.buttonSouth.Click += new System.EventHandler(this.ButtonSouth_Click);
+            // 
+            // buttonWest
+            // 
+            this.buttonWest.Location = new System.Drawing.Point(644, 423);
+            this.buttonWest.Name = "buttonWest";
+            this.buttonWest.Size = new System.Drawing.Size(54, 22);
+            this.buttonWest.TabIndex = 3;
+            this.buttonWest.Text = "West";
+            this.buttonWest.UseVisualStyleBackColor = true;
+            this.buttonWest.Click += new System.EventHandler(this.ButtonWest_Click);
+            // 
+            // buttonEast
+            // 
+            this.buttonEast.Location = new System.Drawing.Point(754, 423);
+            this.buttonEast.Name = "buttonEast";
+            this.buttonEast.Size = new System.Drawing.Size(54, 22);
+            this.buttonEast.TabIndex = 2;
+            this.buttonEast.Text = "East";
+            this.buttonEast.UseVisualStyleBackColor = true;
+            this.buttonEast.Click += new System.EventHandler(this.ButtonEast_Click);
+            // 
+            // buttonNorth
+            // 
+            this.buttonNorth.Location = new System.Drawing.Point(699, 372);
+            this.buttonNorth.Name = "buttonNorth";
+            this.buttonNorth.Size = new System.Drawing.Size(54, 22);
+            this.buttonNorth.TabIndex = 1;
+            this.buttonNorth.Text = "North";
+            this.buttonNorth.UseVisualStyleBackColor = true;
+            this.buttonNorth.Click += new System.EventHandler(this.ButtonNorth_Click);
             // 
             // groupBox1
             // 
@@ -322,23 +375,19 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "CurrentLocation";
             // 
-            // MainWindowTimer
-            // 
-            this.MainWindowTimer.Tick += new System.EventHandler(this.MainWindowTimer_Tick);
-            // 
             // currentLocationPictureBox
             // 
-            this.currentLocationPictureBox.DataBindings.Add(new System.Windows.Forms.Binding("Image", this.gameSessionBindingSource, "CurrentLocation.ImageName", true));
             this.currentLocationPictureBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.currentLocationPictureBox.Location = new System.Drawing.Point(3, 16);
             this.currentLocationPictureBox.Name = "currentLocationPictureBox";
             this.currentLocationPictureBox.Size = new System.Drawing.Size(265, 199);
+            this.currentLocationPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.currentLocationPictureBox.TabIndex = 0;
             this.currentLocationPictureBox.TabStop = false;
             // 
-            // gameSessionBindingSource
+            // MainWindowTimer
             // 
-            this.gameSessionBindingSource.DataSource = typeof(Engine.ViewModels.GameSession);
+            this.MainWindowTimer.Tick += new System.EventHandler(this.MainWindowTimer_Tick);
             // 
             // MainWindow
             // 
@@ -351,6 +400,7 @@
             this.Load += new System.EventHandler(this.MainWindow_Load);
             this.overallSplitContainer.Panel1.ResumeLayout(false);
             this.overallSplitContainer.Panel2.ResumeLayout(false);
+            this.overallSplitContainer.Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.overallSplitContainer)).EndInit();
             this.overallSplitContainer.ResumeLayout(false);
             this.splitContainer2.Panel1.ResumeLayout(false);
@@ -361,7 +411,8 @@
             this.tabPage1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.currentLocationPictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gameSessionBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.currentPlayerBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.currentLocationBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -373,7 +424,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn currentPlayerDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn currentLocationDataGridViewTextBoxColumn;
         private System.Windows.Forms.Label dexterityValueLabel;
-        private System.Windows.Forms.BindingSource gameSessionBindingSource;
         private System.Windows.Forms.Label expValueLabel;
         private System.Windows.Forms.Label goldValueLabel;
         private System.Windows.Forms.Label intelligenceValueLabel;
@@ -388,6 +438,13 @@
         private System.Windows.Forms.Timer MainWindowTimer;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.PictureBox currentLocationPictureBox;
+        private System.Windows.Forms.BindingSource currentPlayerBindingSource;
+        private System.Windows.Forms.Button buttonNorth;
+        private System.Windows.Forms.Button buttonSouth;
+        private System.Windows.Forms.Button buttonWest;
+        private System.Windows.Forms.Button buttonEast;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.BindingSource currentLocationBindingSource;
     }
 }
 

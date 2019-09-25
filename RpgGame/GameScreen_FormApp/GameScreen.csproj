@@ -75,6 +75,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="Properties\DataSources\Engine.Models.Location.datasource" />
+    <None Include="Properties\DataSources\Engine.Models.Player.datasource" />
+    <None Include="Properties\DataSources\Engine.Models.World.datasource" />
     <None Include="Properties\DataSources\Engine.ViewModels.GameSession.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

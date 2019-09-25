@@ -9,9 +9,7 @@ using System.Threading.Tasks;
 namespace Engine.Models
 {
 
-    [DataContract()]
     public class Player : INotifyPropertyChanged
-
     {
         private string _Name;
         private int _Strength;
@@ -21,7 +19,6 @@ namespace Engine.Models
         private int _Exp;
         private int _Gold;
 
-        [DataMember()]
         public string Name
         {
             get
@@ -36,7 +33,6 @@ namespace Engine.Models
 
         }
 
-        [DataMember()]
         public int Strength
         {
             get
@@ -51,7 +47,6 @@ namespace Engine.Models
 
         }
 
-        [DataMember()]
         public int Stamina
         {
             get
@@ -67,7 +62,6 @@ namespace Engine.Models
         }
 
 
-        [DataMember()]
         public int Dexterity
         {
             get
@@ -82,7 +76,6 @@ namespace Engine.Models
 
         }
 
-        [DataMember()]
         public int Intelligence
         {
             get
@@ -97,7 +90,6 @@ namespace Engine.Models
 
         }
 
-        [DataMember()]
         public int Level
         {
             get
@@ -112,7 +104,6 @@ namespace Engine.Models
 
         }
 
-        [DataMember()]
         public int Exp
         {
             get
@@ -127,7 +118,6 @@ namespace Engine.Models
 
         }
 
-        [DataMember()]
         public int Gold
         {
             get

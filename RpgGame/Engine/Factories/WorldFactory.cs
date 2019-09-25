@@ -36,10 +36,16 @@ namespace Engine.Factories
                 (-1, 0, 
                 "Istana",
                 "The Seri Menanti Istana, a gleaming stucture that acts as the stronghold for the Sultan",
+                @"C:\Users\Barzarin\Documents\GitHub\gameRPG\RpgGame\Engine\Images\Location\TownCentral.jpg"
+                );
+
+            newWorld.AddLocation
+                (0, 0,
+                "City central",
+                "Test",
                 @"C:\Users\Barzarin\Documents\GitHub\gameRPG\RpgGame\Engine\Images\Location\Istana.jpg"
                 );
 
-            
 
             return newWorld;
 
