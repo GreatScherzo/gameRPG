@@ -28,7 +28,7 @@ namespace Engine.Models
             set
             {
                 _Name = value;
-                OnPropertyChanged("Name");
+                OnPropertyChanged(nameof(Name));
             }
 
         }
@@ -42,7 +42,7 @@ namespace Engine.Models
             set
             {
                 _Strength = value;
-                OnPropertyChanged("Strength");
+                OnPropertyChanged(nameof(Strength));
             }
 
         }
@@ -56,7 +56,7 @@ namespace Engine.Models
             set
             {
                 _Stamina = value;
-                OnPropertyChanged("Stamina");
+                OnPropertyChanged(nameof(Stamina));
             }
 
         }
@@ -71,7 +71,7 @@ namespace Engine.Models
             set
             {
                 _Dexterity = value;
-                OnPropertyChanged("Dexterity");
+                OnPropertyChanged(nameof(Dexterity));
             }
 
         }
@@ -85,7 +85,7 @@ namespace Engine.Models
             set
             {
                 _Intelligence = value;
-                OnPropertyChanged("Intelligence");
+                OnPropertyChanged(nameof(Intelligence));
             }
 
         }
@@ -99,7 +99,7 @@ namespace Engine.Models
             set
             {
                 _Stamina = value;
-                OnPropertyChanged("Stamina");
+                OnPropertyChanged(nameof(Stamina));
             }
 
         }
@@ -113,7 +113,7 @@ namespace Engine.Models
             set
             {
                 _Exp = value;
-                OnPropertyChanged("Exp");
+                OnPropertyChanged(nameof(Exp));
             }
 
         }
@@ -127,7 +127,7 @@ namespace Engine.Models
             set
             {
                 _Gold = value;
-                OnPropertyChanged("Gold");
+                OnPropertyChanged(nameof(Gold));
             }
 
         }
