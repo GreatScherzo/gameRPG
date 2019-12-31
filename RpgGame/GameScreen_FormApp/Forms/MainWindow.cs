@@ -93,6 +93,8 @@ namespace GameScreen_FormApp
 
 
 
+        //movement control
+        //TODO: add guard clauses to movement
 
         private void ButtonNorth_Click(object sender, EventArgs e)
         {
